@@ -4,7 +4,7 @@
   "description": "Website for the delivery of goods from China",
   "main": "index.js",
   "scripts": {
-    "start": "parcel index.html --open"
+    "start": "parcel index.html --open --no-cache"
   },
   "keywords": [
     "delivery"
@@ -12,6 +12,7 @@
   "author": "AnnOvs19",
   "license": "ISC",
   "dependencies": {
-    "parcel": "^2.10.0"
+    "parcel": "^2.10.0",
+    "sass": "^1.69.4"
   }
 }
