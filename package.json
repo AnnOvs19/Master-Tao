@@ -1,0 +1,17 @@
+{
+  "name": "master-tao",
+  "version": "1.0.0",
+  "description": "Website for the delivery of goods from China",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html --open"
+  },
+  "keywords": [
+    "delivery"
+  ],
+  "author": "AnnOvs19",
+  "license": "ISC",
+  "dependencies": {
+    "parcel": "^2.10.0"
+  }
+}
