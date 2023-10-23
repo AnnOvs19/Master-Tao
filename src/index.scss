@@ -1,0 +1,50 @@
+@import "/src/scss/header.scss";
+@import "/src/scss/slider-cost.scss";
+@import "/src/scss/calculation-form.scss";
+@import "/src/scss/reasons.scss";
+@import "/src/scss/delivery-options.scss";
+@import "/src/scss/services.scss";
+@import "/src/scss/company.scss";
+@import "/src/scss/faq.scss";
+@import "/src/scss/coop.scss";
+@import "/src/scss/footer.scss";
+@import "/src/scss/common.scss";
+
+body {
+    background: $bg-color;
+}
+
+.base {
+    &-title {
+        font-style: normal;
+        font-weight: 700;
+        line-height: 125%;
+        text-transform: uppercase;
+        color: white;
+    }
+
+    &-text {
+        font-style: normal;
+        font-weight: 400;
+        color: white;
+    }
+
+    &-btn {
+        padding: 14px 27px 14px 27px;
+        border: 1px solid $orange;
+        border-radius: 90px;
+        color: white;
+
+        &-orange {
+            background-color: $orange;
+        }
+
+        &-transparent {
+            background-color: transparent;
+        }
+
+    }
+
+
+
+}
