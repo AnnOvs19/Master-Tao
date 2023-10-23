@@ -12,6 +12,7 @@
 
 body {
     background: $bg-color;
+    position: relative;
 }
 
 .base {
@@ -25,15 +26,19 @@ body {
 
     &-text {
         font-style: normal;
-        font-weight: 400;
+        font-weight: 300;
         color: white;
     }
 
     &-btn {
-        padding: 14px 27px 14px 27px;
-        border: 1px solid $orange;
-        border-radius: 90px;
-        color: white;
+
+        &-orange,
+        &-transparent {
+            padding: 14px 27px 14px 27px;
+            border: 1px solid $orange;
+            border-radius: 90px;
+            color: white;
+        }
 
         &-orange {
             background-color: $orange;

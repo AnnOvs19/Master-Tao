@@ -1,1 +1,81 @@
 @import './common.scss';
+
+.slider {
+    width: 1820px;
+    margin: 0 auto;
+    overflow: hidden;
+
+    &-line {
+        display: flex;
+        flex-direction: row;
+        width: 7280px;
+
+        &__item {
+            display: flex;
+            justify-content: center;
+            width: 1820px;
+            max-width: 1820px;
+            height: 700px;
+            margin-left: -1px;
+            margin: 100px auto 0 auto;
+            background-position: center center;
+            position: relative;
+
+            &-desc {
+                display: flex;
+                margin: 163px 0 0 0;
+                display: flex;
+                justify-content: flex-start;
+                width: 1200px;
+                position: relative;
+                z-index: 2;
+            }
+
+            &-bg {
+                position: absolute;
+                top: 0;
+                left: 0;
+                border-radius: 20px;
+                width: 1820px;
+                height: 700px;
+            }
+
+            // &__arrow {
+            //     &:first-child {
+            //         position: absolute;
+            //         top: 327px;
+            //         left: 150px;
+            //     }
+
+            //     &:last-child {
+            //         position: absolute;
+            //         top: 327px;
+            //         right: 150px;
+            //     }
+            // }
+
+            div {
+                h1 {
+                    font-size: 56px;
+                    width: 554px;
+                }
+
+                p {
+                    font-size: 20px;
+                    line-height: 135.5%;
+                    width: 372px;
+                    margin: 8px 0 37px 0;
+                }
+
+                button {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                }
+            }
+
+            &__point {}
+
+        }
+    }
+}
