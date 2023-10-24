@@ -91,11 +91,63 @@
 
     </div>
 
-    <div class="calculation-form"></div>
+    <div class="calculation">
+        <div class="calculator">
+            <h1 class="base-title">Получить рассчет стоимости доставки вашего груза</h1>
+            <div class="calc-form">
+                <div class="calc-form__head">
+                    <div class="calc-form__head-item active">1</div>
+                    <div class="calc-form__head-item">2</div>
+                    <div class="calc-form__head-item">3</div>
+                </div>
+                <div class="calc-form__body">
+                    <div class="calc-form__body-category">
+                        <span class="title-input">Категория товара:</span>
+                        <input type="text" placeholder="Категория товара">
+
+                        <span class="title-input">Вес груза (кг):</span>
+                        <input type="number" placeholder="Введите вес">
+
+                        <div class="base-checkbox">
+                            <input type="checkbox" id="insurance" name="insurance" checked />
+                            <label for="insurance">Страховка</label>
+                        </div>
+                        <div class="base-checkbox">
+                            <input type="checkbox" id="decoration" name="decoration" checked />
+                            <label for="decoration">Таможенное оформление</label>
+                        </div>
+                    </div>
+                    <div class="calc-form__body-cost">
+                        <span class="title-input">Стоимость груза:</span>
+                        <input type="number" placeholder="Введите стоимость">
+
+                        <span class="title-input">Объём груза (м3):</span>
+                        <span class="calc-link">Рассчитать</span>
+                        <input type="number" placeholder="">
+
+                        <span class="title-input">Код ТН ВЭД:</span>
+                        <input type="number" placeholder="">
+                    </div>
+                </div>
+                <div class="calc-form__bottom">
+                    <div class="send-photo">
+                        <span class="title-img">фотография.jpeg</span>
+                        <span class="delete-link">Удалить фото</span>
+                    </div>
+                    <input type="text" placeholder="Загрузить фото товара">
+                    <button class="base-btn-orange">Рассчитать стоимость
+                        <img src="/src/assets/icons/orange-arrow-circle.svg" alt="#">
+                    </button>
+
+                </div>
+            </div>
+        </div>
+        <img src="/src/assets/img/colculatoin-form-man.png" alt="#">
+    </div>
 
     <div class="reasons"></div>
 
-    <div class="delivery-options"></div>
+    <div class="delivery"></div>
 
     <div class="services"></div>
 
