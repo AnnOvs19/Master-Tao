@@ -1,1 +1,114 @@
 @import './common.scss';
+
+.calculation {
+    max-width: $container;
+    width: $container;
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 97px;
+
+    &-bg-man {
+        position: absolute;
+        top: 0;
+        right: -60px;
+    }
+
+    .calculator-step-1 {
+        h1 {
+            font-size: 36px;
+            width: 670px;
+            margin-bottom: 62px;
+        }
+
+        .calc-form {
+            display: flex;
+            flex-direction: column;
+            width: 580px;
+            background-color: $gray;
+            border-radius: 25px;
+            padding: 0 50px 0 50px;
+
+            &__head {
+                display: flex;
+                flex-direction: row;
+                gap: 40px;
+                margin-bottom: 40px;
+
+                &-item {
+                    width: 60px;
+                    height: 60px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 90px;
+                    border: 2px solid $gray;
+                    background: $bg-color;
+                    margin-top: -25px;
+
+
+                    p {
+                        color: white;
+                        font-size: 24px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 126%;
+
+                    }
+                }
+
+                .active {
+                    background: $green;
+                    border: none;
+                }
+            }
+
+            &__body {
+                display: flex;
+                flex-direction: row;
+                gap: 30px;
+                margin-bottom: 15px;
+
+                &-category {}
+
+                &-cost {}
+
+            }
+
+            &__bottom {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 40px;
+                gap: 15px;
+
+                button {
+                    gap: 10px;
+                }
+
+                &-send {
+                    display: flex;
+                    justify-content: space-between;
+                }
+            }
+        }
+    }
+}
+
+.link-calc {
+    margin-left: 35px;
+    color: $orange;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.link-delete {
+    color: red;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.title-img {
+    color: white;
+    cursor: pointer;
+}
