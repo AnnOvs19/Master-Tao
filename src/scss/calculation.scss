@@ -12,18 +12,19 @@
     &-bg-man {
         position: absolute;
         top: 0;
-        right: -60px;
+        right: -50px;
     }
 
-    .calculator-step-1 {
+    .calculator {
+
         h1 {
             font-size: 36px;
             width: 670px;
             margin-bottom: 62px;
         }
 
-        .calc-form {
-            display: flex;
+        .form {
+            display: none;
             flex-direction: column;
             width: 580px;
             background-color: $gray;
@@ -64,34 +65,72 @@
                 }
             }
 
-            &__body {
-                display: flex;
-                flex-direction: row;
-                gap: 30px;
-                margin-bottom: 15px;
+            &-step-1 {
+                display: none;
 
-                &-category {}
+                &__body {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 30px;
+                    margin-bottom: 15px;
 
-                &-cost {}
+                    &-category {}
 
+                    &-cost {}
+
+                }
+
+                &__bottom {
+                    display: flex;
+                    flex-direction: column;
+                    margin-bottom: 40px;
+                    gap: 15px;
+
+                    &-send {
+                        display: flex;
+                        justify-content: space-between;
+                    }
+                }
             }
 
-            &__bottom {
+            &-step-2 {
                 display: flex;
                 flex-direction: column;
-                margin-bottom: 40px;
-                gap: 15px;
 
-                button {
-                    gap: 10px;
+                &__person-data {
+
+                    .base-input {
+                        width: 93%;
+                    }
+
+                    .contacts {
+                        display: flex;
+                        flex-direction: row;
+                        gap: 106px;
+                    }
+
                 }
 
-                &-send {
+                &__bottom-btn {
                     display: flex;
+                    flex-direction: row;
                     justify-content: space-between;
+                    margin: 45px 0 40px 0;
+
+                    .base-btn-transparent {
+                        width: 208px;
+                    }
+
+                    img {
+                        margin-left: 10px;
+                    }
                 }
+
             }
+
         }
+
+        .finish {}
     }
 }
 

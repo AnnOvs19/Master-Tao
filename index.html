@@ -92,77 +92,118 @@
     </div>
 
     <div class="calculation">
-        <div class="calculator-step-1">
+
+        <div class="calculator">
             <h1 class="base-title">Получить рассчет стоимости доставки вашего груза</h1>
-            <div class="calc-form">
-                <div class="calc-form__head">
-                    <div class="calc-form__head-item active">
+            <div class="form">
+                <div class="form__head">
+                    <div class="form__head-item active">
                         <p>1</p>
                     </div>
-                    <div class="calc-form__head-item">
+                    <div class="form__head-item">
                         <p>2</p>
                     </div>
-                    <div class="calc-form__head-item">
+                    <div class="form__head-item">
                         <p>3</p>
                     </div>
                 </div>
-                <div class="calc-form__body">
-                    <div class="calc-form__body-category">
-                        <span class="base-title-input">Категория товара:</span>
-                        <div class="base-input">
-                            <input type="text" placeholder="Категория товара">
+
+                <div class="form-step-1">
+                    <div class="form-step-1__body">
+                        <div class="form-step-1__body-category">
+                            <span class="base-title-input">Категория товара:</span>
+                            <div class="base-input">
+                                <input type="text" placeholder="Категория товара">
+                            </div>
+
+                            <span class="base-title-input">Вес груза (кг):</span>
+                            <div class="base-input">
+                                <input type="text" placeholder="Введите вес">
+                            </div>
+
+                            <label class="base-checkbox">
+                                <input type="checkbox">
+                                <span>Страховка</span>
+                            </label>
+
+                            <label class="base-checkbox">
+                                <input type="checkbox">
+                                <span>Таможенное оформление</span>
+                            </label>
+
                         </div>
+                        <div class="form-step-1__body-cost">
+                            <span class="base-title-input">Стоимость груза:</span>
+                            <div class="base-input">
+                                <input type="text" placeholder="Введите стоимость">
+                            </div>
 
-                        <span class="base-title-input">Вес груза (кг):</span>
-                        <div class="base-input">
-                            <input type="text" placeholder="Введите вес">
+                            <span class="base-title-input">Объём груза (м3):</span>
+                            <span class="link-calc">Рассчитать</span>
+                            <div class="base-input">
+                                <input type="text" placeholder="Введите объем">
+                            </div>
+
+                            <span class="base-title-input">Код ТН ВЭД:</span>
+                            <div class="base-input">
+                                <input type="text" placeholder="Введите код">
+                            </div>
                         </div>
-
-                        <label class="base-checkbox">
-                            <input type="checkbox">
-                            <span>Страховка</span>
-                        </label>
-
-                        <label class="base-checkbox">
-                            <input type="checkbox">
-                            <span>Таможенное оформление</span>
-                        </label>
-
                     </div>
-                    <div class="calc-form__body-cost">
-                        <span class="base-title-input">Стоимость груза:</span>
-                        <div class="base-input">
-                            <input type="text" placeholder="Введите стоимость">
+                    <div class="form-step-1__bottom">
+                        <div class="form-step-1__bottom-send">
+                            <span class="title-img">фотография.jpeg</span>
+                            <span class="link-delete">Удалить фото</span>
                         </div>
 
-                        <span class="base-title-input">Объём груза (м3):</span>
-                        <span class="link-calc">Рассчитать</span>
-                        <div class="base-input">
-                            <input type="text" placeholder="Введите объем">
-                        </div>
+                        <button class="base-btn-file">Загрузить фото товара</button>
 
-                        <span class="base-title-input">Код ТН ВЭД:</span>
-                        <div class="base-input">
-                            <input type="text" placeholder="Введите код">
-                        </div>
+                        <button class="base-btn-orange">Следующий шаг
+                            <img src="/src/assets/icons/orange-arrow-circle.svg" alt="#">
+                        </button>
+
                     </div>
                 </div>
-                <div class="calc-form__bottom">
-                    <div class="calc-form__bottom-send">
-                        <span class="title-img">фотография.jpeg</span>
-                        <span class="link-delete">Удалить фото</span>
+
+                <div class="form-step-2">
+                    <div class="form-step-2__person-data">
+                        <span class="base-title-input">Имя</span>
+                        <div class="base-input">
+                            <input type="text" placeholder="Ваше имя">
+                        </div>
+                        <div class="contacts">
+                            <div>
+                                <span class="base-title-input">Номер телефона:</span>
+                                <div class="base-input">
+                                    <input type="tel" placeholder="Введите номер">
+                                </div>
+                            </div>
+                            <div>
+                                <span class="base-title-input">Email:</span>
+                                <div class="base-input">
+                                    <input type="email" placeholder="Введите e-mail">
+                                </div>
+                            </div>
+                        </div>
+                        <span class="base-title-input">Комментарий</span>
+                        <textarea cols="30" rows="10" placeholder="Подробности о товаре, описание, количество"
+                            class="base-textarea"></textarea>
                     </div>
-
-                    <button class="base-btn-file">Загрузить фото товара</button>
-
-                    <button class="base-btn-orange">Рассчитать стоимость
-                        <img src="/src/assets/icons/orange-arrow-circle.svg" alt="#">
-                    </button>
-
+                    <div class="form-step-2__bottom-btn">
+                        <button class="base-btn-transparent">Назад</button>
+                        <button class="base-btn-orange">Следующий шаг
+                            <img src="/src/assets/icons/orange-arrow-circle.svg" alt="#">
+                        </button>
+                    </div>
                 </div>
+
             </div>
+
+            <div class="finish"></div>
+
         </div>
-        <img src="/src/assets/img/colculatoin-form-man.png" alt="#" class="colculatoin-bg-man">
+
+        <img src="/src/assets/img/colculatoin-form-man.png" alt="#" class="calculation-bg-man">
     </div>
 
     <div class="reasons"></div>
