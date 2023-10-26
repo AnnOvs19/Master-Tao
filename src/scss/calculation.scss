@@ -118,7 +118,7 @@
                     .contacts {
                         display: flex;
                         flex-direction: row;
-                        gap: 106px;
+                        gap: 115px;
                     }
 
                 }
@@ -142,18 +142,18 @@
 
         }
 
-        .finish {
+        .end-form {
             display: none;
             flex-direction: column;
             gap: 35px;
 
-            &-head {
+            &__head {
                 display: flex;
                 flex-direction: row;
                 align-items: center;
                 gap: 30px;
 
-                &__title {
+                &-title {
 
                     h2 {
                         font-size: 32px;
@@ -170,7 +170,7 @@
                 }
             }
 
-            &-body {
+            &__body {
 
                 display: flex;
                 flex-direction: column;
