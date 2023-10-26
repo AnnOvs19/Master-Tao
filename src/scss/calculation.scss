@@ -21,10 +21,21 @@
             font-size: 36px;
             width: 670px;
             margin-bottom: 62px;
+            position: relative;
+
+            &::before {
+                content: '';
+                background: $green;
+                width: 95px;
+                height: 2px;
+                top: 67px;
+                right: 6px;
+                position: absolute;
+            }
         }
 
         .form {
-            display: none;
+            display: flex;
             flex-direction: column;
             width: 580px;
             background-color: $gray;
@@ -67,6 +78,7 @@
 
             &-step-1 {
                 display: none;
+                flex-direction: column;
 
                 &__body {
                     display: flex;
@@ -130,7 +142,58 @@
 
         }
 
-        .finish {}
+        .finish {
+            display: none;
+            flex-direction: column;
+            gap: 35px;
+
+            &-head {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 30px;
+
+                &__title {
+
+                    h2 {
+                        font-size: 32px;
+                    }
+
+                    span {
+                        color: white;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 126%;
+                    }
+
+                }
+            }
+
+            &-body {
+
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                p {
+                    font-size: 20px;
+                }
+
+                ul {
+                    margin-left: 20px;
+                }
+
+                li {
+                    font-size: 18px;
+                    line-height: 144%;
+                }
+            }
+        }
+    }
+
+    .finish-margin {
+        margin-top: 250px;
     }
 }
 
