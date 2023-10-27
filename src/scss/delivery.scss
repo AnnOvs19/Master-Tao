@@ -1,1 +1,74 @@
 @import './common.scss';
+
+.delivery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+    max-width: $container;
+    width: $container;
+    margin: 0 auto;
+    margin-top: 97px;
+
+    h1 {
+        font-size: 36px;
+        margin-bottom: 70px;
+        position: relative;
+
+        &::before {
+            content: '';
+            background: $green;
+            width: 110px;
+            height: 2px;
+            top: 67px;
+            left: 355px;
+            bottom: 6px;
+            position: absolute;
+        }
+    }
+
+    &-line {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+
+        &__item {
+            display: flex;
+            flex-direction: column;
+            border-radius: 20px;
+            background-color: $gray;
+
+            &-desc {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 27px 20px;
+
+                h2 {
+                    font-size: 22px;
+                    margin-bottom: 14px;
+                }
+
+                .deadlines {
+                    display: flex;
+                    margin-bottom: 14px;
+
+                    span {
+                        font-size: 16px;
+                        line-height: 124.5%;
+                    }
+                }
+
+                p {
+                    font-size: 22px;
+                    margin-bottom: 18px;
+                }
+
+                div {
+                    display: flex;
+                    gap: 14px;
+                }
+            }
+        }
+    }
+}

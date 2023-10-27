@@ -111,14 +111,14 @@
 
                 &__person-data {
 
-                    .base-input {
+                    .name-person {
                         width: 93%;
                     }
 
                     .contacts {
                         display: flex;
                         flex-direction: row;
-                        gap: 115px;
+                        justify-content: space-between;
                     }
 
                 }

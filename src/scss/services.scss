@@ -1,1 +1,26 @@
 @import './common.scss';
+
+.services {
+    padding: 90px 0 90px 0;
+    border-radius: 20px;
+    background: linear-gradient(0deg, #363A4D 0%, #363A4D 100%), #F7F7F7;
+    margin: 0 auto;
+    margin-top: 166px;
+    max-width: 1820px;
+    width: 1820px;
+
+    &-box {
+
+        &-line {
+            &__item {
+                img {}
+
+                h2 {}
+
+                p {}
+
+                button {}
+            }
+        }
+    }
+}
