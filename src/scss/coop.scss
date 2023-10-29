@@ -1,1 +1,77 @@
 @import './common.scss';
+
+.coop {
+
+    display: flex;
+    flex-direction: column;
+    padding: 90px 0 90px 0;
+    border-radius: 20px;
+    background: linear-gradient(0deg, #363A4D 0%, #363A4D 100%), #F7F7F7;
+    max-width: 1820px;
+    width: 1820px;
+    margin: 0 auto;
+    margin-top: 166px;
+    align-items: center;
+
+    &-box {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: $container;
+        width: $container;
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 24px;
+            line-height: 124.5%;
+        }
+
+        &__top-desc {
+            margin-top: 85px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 50px;
+
+
+
+            div {
+                p {
+                    font-size: 17px;
+                    line-height: 156.5%;
+                    width: 540px;
+                }
+            }
+
+
+            img {}
+        }
+
+        &__bottom-desc {
+            margin-top: 75px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 70px;
+
+
+            div {
+                p {
+                    font-size: 17px;
+                    line-height: 156.5%;
+                }
+
+                button {}
+            }
+
+
+            img {}
+        }
+
+    }
+}

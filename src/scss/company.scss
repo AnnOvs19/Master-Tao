@@ -1,1 +1,36 @@
 @import './common.scss';
+
+.company {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: $container;
+    width: $container;
+    margin: 0 auto;
+    margin-top: 97px;
+
+    &-desc {
+        h1 {
+            font-size: 36px;
+            margin-bottom: 65px;
+            position: relative;
+
+            &::before {
+                content: '';
+                background: $green;
+                width: 110px;
+                height: 2px;
+                top: 75px;
+                left: 0;
+                bottom: 6px;
+                position: absolute;
+            }
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 170%;
+        }
+    }
+
+}
