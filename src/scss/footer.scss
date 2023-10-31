@@ -1,1 +1,83 @@
 @import './common.scss';
+
+.footer {
+    background-color: $bg-color;
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    padding: 20px 20px 50px 20px;
+
+
+    &-box {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        max-width: $container;
+        width: $container;
+        border-top: 1px solid $orange;
+        padding-top: 40px;
+
+
+
+        &__contacts {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            img {
+                &:nth-child(1) {
+                    height: 48.354px;
+                    width: 171.999px;
+                }
+            }
+
+            p {
+                font-size: 14px;
+                line-height: 162.5%;
+                width: 250px;
+            }
+
+            &-snw {
+                display: flex;
+                flex-direction: row;
+                gap: 10px;
+                margin-top: 20px;
+
+                img {
+                    width: 34px !important;
+                    height: 33px !important;
+                }
+            }
+
+        }
+
+        &__nav {
+            display: flex;
+            flex-direction: row;
+            gap: 97px;
+
+            &-item {
+                display: flex;
+                flex-direction: column;
+
+                h2 {
+                    font-size: 20px;
+                    margin-bottom: 20px;
+                }
+
+                li {
+                    color: #85899C;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: 160.5%;
+                    text-decoration-line: underline;
+                    list-style-type: none;
+                }
+
+            }
+
+        }
+
+    }
+}

@@ -1,1 +1,45 @@
 @import './common.scss';
+
+
+.faq {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: $container;
+    width: $container;
+    margin: 0 auto;
+    margin-top: 30px;
+
+    h1 {
+        font-size: 36px;
+    }
+
+    &-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    &-list {
+
+        &__item {
+
+            p {
+                font-size: 18px;
+            }
+
+        }
+
+    }
+
+    &-form {
+        h2 {
+            font-size: 24px;
+        }
+
+        span {
+            font-size: 17px;
+            line-height: 126%;
+        }
+    }
+}
