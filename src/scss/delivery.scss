@@ -4,11 +4,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    overflow-x: hidden;
     max-width: $container;
     width: $container;
     margin: 0 auto;
     margin-top: 97px;
+    position: relative;
 
     h1 {
         font-size: 36px;
@@ -27,10 +27,21 @@
         }
     }
 
+    &-box {
+        overflow-x: hidden;
+        max-width: 1170px;
+        width: 1170px;
+        position: relative;
+    }
+
+
     &-line {
         display: flex;
         flex-direction: row;
         gap: 30px;
+        position: relative;
+        left: 0;
+        transition: 0.8s;
 
         &__item {
             display: flex;
@@ -71,4 +82,25 @@
             }
         }
     }
+
+    &__arrow {
+
+        img {
+            position: absolute;
+            z-index: 100;
+            cursor: pointer;
+
+            &:nth-child(1) {
+                top: 320px;
+                left: -95px;
+            }
+
+            &:nth-child(2) {
+                top: 320px;
+                right: -65px;
+            }
+        }
+
+    }
+
 }

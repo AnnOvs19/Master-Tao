@@ -4,11 +4,15 @@
     width: 1820px;
     margin: 0 auto;
     overflow: hidden;
+    position: relative;
 
     &-line {
         display: flex;
+        position: relative;
+        left: 0;
         flex-direction: row;
         width: 7280px;
+        transition: 0.8s;
 
         &__item {
             display: flex;
@@ -40,19 +44,7 @@
                 height: 700px;
             }
 
-            // &__arrow {
-            //     &:first-child {
-            //         position: absolute;
-            //         top: 327px;
-            //         left: 150px;
-            //     }
 
-            //     &:last-child {
-            //         position: absolute;
-            //         top: 327px;
-            //         right: 150px;
-            //     }
-            // }
 
             div {
                 h1 {
@@ -77,5 +69,26 @@
             &__point {}
 
         }
+    }
+
+    &__arrow {
+
+        img {
+
+            position: absolute;
+            z-index: 100;
+            cursor: pointer;
+
+            &:nth-child(1) {
+                top: 420px;
+                left: 150px;
+            }
+
+            &:nth-child(2) {
+                top: 420px;
+                right: 150px;
+            }
+        }
+
     }
 }
