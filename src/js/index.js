@@ -1,5 +1,6 @@
-import "./slider"
-import "./faq"
+import "./slider";
+import "./faq";
+import "./calculation"
 
 
 
