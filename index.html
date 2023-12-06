@@ -618,31 +618,32 @@
 
             </div>
 
-            <div class="faq-form">
+            <form class="faq-form">
                 <div>
                     <h2 class="base-title">Остались вопросы?</h2>
                     <span class="base-text">Оставьте заявку и наш менеджер ответит вам в ближайшее время</span>
                 </div>
 
                 <div class="faq-form__input">
-                    <input type="text" placeholder="Имя *">
+                    <input type="text" placeholder="Имя *" name="name">
                 </div>
 
                 <div class="faq-form__input">
-                    <input type="text" placeholder="Телефон *">
+                    <input type="tel" placeholder="Телефон *" name="phone">
                 </div>
 
                 <div class="faq-form__input">
-                    <input type="text" placeholder="Телефон *">
+                    <input type="email" placeholder="E-mail *" name="email">
                 </div>
 
-                <textarea cols="30" rows="10" placeholder="Ваш вопрос" class="faq-form__ta"></textarea>
+                <textarea cols="30" rows="10" placeholder="Ваш вопрос" class="faq-form__ta"
+                    name="you_questions"></textarea>
 
 
-                <button class="base-btn-orange">Отправить запрос</button>
+                <button class="base-btn-orange faq-submit">Отправить запрос</button>
 
 
-            </div>
+            </form>
         </div>
     </div>
 
