@@ -109,45 +109,45 @@
                     </div>
                 </div>
 
-                <div class="form-step-1">
+                <form class="form-step-1">
                     <div class="form-step-1__body">
                         <div class="form-step-1__body-category">
                             <span class="base-title-input">Категория товара:</span>
                             <div class="base-input">
-                                <input type="text" placeholder="Категория товара">
+                                <input type="text" placeholder="Категория товара" name="categoty">
                             </div>
 
                             <span class="base-title-input">Вес груза (кг):</span>
                             <div class="base-input">
-                                <input type="text" placeholder="Введите вес">
+                                <input type="number" placeholder="Введите вес" name="weight">
                             </div>
 
                             <label class="base-checkbox">
-                                <input type="checkbox">
+                                <input type="checkbox" name="insurance">
                                 <span>Страховка</span>
                             </label>
 
                             <label class="base-checkbox">
-                                <input type="checkbox">
+                                <input type="checkbox" name="customs_clearance">
                                 <span>Таможенное оформление</span>
                             </label>
 
                         </div>
                         <div class="form-step-1__body-cost">
-                            <span class="base-title-input">Стоимость груза:</span>
+                            <span class="base-title-input">Стоимость груза($):</span>
                             <div class="base-input">
-                                <input type="text" placeholder="Введите стоимость">
+                                <input type="number" placeholder="Введите стоимость" name="cost">
                             </div>
 
                             <span class="base-title-input">Объём груза (м3):</span>
                             <span class="link-calc">Рассчитать</span>
                             <div class="base-input">
-                                <input type="text" placeholder="Введите объем">
+                                <input type="number" placeholder="Введите объем" name="cargo_volume">
                             </div>
 
                             <span class="base-title-input">Код ТН ВЭД:</span>
                             <div class="base-input">
-                                <input type="text" placeholder="Введите код">
+                                <input type="number" placeholder="Введите код" name="code">
                             </div>
                         </div>
                     </div>
@@ -157,46 +157,45 @@
                             <span class="link-delete">Удалить фото</span>
                         </div>
 
-                        <button class="base-btn-file">Загрузить фото товара</button>
+                        <button class="base-btn-file" disabled>Загрузить фото товара</button>
 
                         <button class="base-btn-orange">Следующий шаг
                             <img src="/src/assets/icons/orange-arrow-circle.svg" alt="#">
                         </button>
 
                     </div>
-                </div>
+                </form>
 
-                <div class="form-step-2 hide">
+                <form class="form-step-2 hide">
                     <div class="form-step-2__person-data">
                         <span class="base-title-input">Имя</span>
                         <div class="base-input name-person">
-                            <input type="text" placeholder="Ваше имя">
+                            <input type="text" placeholder="Ваше имя" name="name">
                         </div>
                         <div class="contacts">
                             <div>
                                 <span class="base-title-input">Номер телефона:</span>
                                 <div class="base-input">
-                                    <input type="tel" placeholder="Введите номер">
+                                    <input type="tel" placeholder="Введите номер" name="telephone">
                                 </div>
                             </div>
                             <div>
                                 <span class="base-title-input">Email:</span>
                                 <div class="base-input">
-                                    <input type="email" placeholder="Введите e-mail">
+                                    <input type="email" placeholder="Введите e-mail" name="email">
                                 </div>
                             </div>
                         </div>
                         <span class="base-title-input">Комментарий</span>
                         <textarea cols="30" rows="10" placeholder="Подробности о товаре, описание, количество"
-                            class="base-textarea"></textarea>
+                            class="base-textarea" name="desc"></textarea>
                     </div>
                     <div class="form-step-2__bottom-btn ">
-                        <button class="base-btn-transparent">Назад</button>
                         <button class="base-btn-orange">Следующий шаг
                             <img src="/src/assets/icons/orange-arrow-circle.svg" alt="#">
                         </button>
                     </div>
-                </div>
+                </form>
 
             </div>
 
